@@ -65,6 +65,9 @@ typedef double              real64;
 
 typedef unsigned int        size_t;
 
+#ifdef __packed
+	#undef __packed
+#endif
 #define __packed        __attribute__((packed))
 
 #define LOCAL       static
